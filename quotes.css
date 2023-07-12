@@ -1,0 +1,37 @@
+body {
+    height: 90vh;
+    font-family: 'Dancing Script', cursive;
+    background-image: linear-gradient(rgb(245, 201, 208) , rgb(170, 167, 167));
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+div {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Chela One', cursive;
+}
+
+button {
+    width: 250px;
+    height: 80px;
+    background-color: rgb(142, 173, 221);
+    color: white;
+    font-size: large;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+p{
+    font-size: 35px;
+    font-family: 'Bacasime Antique', serif;
+}
+
+button:hover{
+    background-color: rgb(180, 201, 174);
+    cursor: pointer;
+    
+}
