@@ -28,12 +28,28 @@ var array = [
 
 
 function randomQuote() {
-    var random = Math.floor(Math.random() * array.length);
-    var quote = array[random].quote;
-    var author = array[random].author;
-    document.getElementById("demo").innerHTML=(`${quote} `);
-    document.getElementById("caption").innerHTML=(`${author} `);
-
+    var random = 0;
+    var quote = "";
+    var author = "";
+  
+    do {
+      random = Math.floor(Math.random() * array.length);
+      quote = array[random].quote;
+      author = array[random].author;
+    } while (document.getElementById("demo").innerHTML.includes(quote));
+  
     
+    document.getElementById("demo").innerHTML = quote;
+    document.getElementById("caption").innerHTML = author;
   }
   
+
+// function randomQuote() {
+//     var random = Math.floor(Math.random() * array.length);
+//     var quote = array[random].quote;
+//     var author = array[random].author;
+//     document.getElementById("demo").innerHTML=(`${quote} `);
+//     document.getElementById("caption").innerHTML=(`${author} `);
+
+    
+//   }
